@@ -3,7 +3,7 @@
 ## Project Overview
 This project applies deep learning techniques to detect and predict the severity of dementia using MRI scans, enhancing interpretability with Grad-CAM visualizations. We employ convolutional neural networks (CNN) and Gradient-weighted Class Activation Mapping (Grad-CAM) to analyze region-specific brain activity and detect various stages of dementia.
 
-## Dataset - "https://www.kaggle.com/datasets/matthewhema/mri-dementia-augmentation-no-data-leak/data"
+### Dataset - "https://www.kaggle.com/datasets/matthewhema/mri-dementia-augmentation-no-data-leak/data"
 
 ## Objectives
 - **Detection**: Classify the severity of dementia into four classes using MRI scans.
