@@ -285,56 +285,6 @@ heatmap = gradcam.compute(image)
 gradcam.overlay(image, heatmap, save_path='results/gradcam_output.png')
 ```
 
----
-
-## 📁 Project Structure
-
-```
-DementiaDetection/
-│
-├── 📂 data/
-│   ├── raw/                          # Original Kaggle MRI images
-│   │   ├── NonDemented/
-│   │   ├── VeryMildDemented/
-│   │   ├── MildDemented/
-│   │   └── ModerateDemented/
-│   └── augmented/                    # DCGAN-generated synthetic images
-│
-├── 📂 models/
-│   ├── cnn.py                        # ⭐ Custom CNN (best model)
-│   ├── densenet.py
-│   ├── resnet.py
-│   ├── inception.py
-│   └── efficientnet.py
-│
-├── 📂 gan/
-│   ├── generator.py                  # DCGAN generator architecture
-│   ├── discriminator.py              # DCGAN discriminator architecture
-│   └── train_dcgan.py                # Per-class GAN training script
-│
-├── 📂 explainability/
-│   ├── gradcam.py                    # Grad-CAM implementation
-│   └── visualize.py                  # Heatmap overlay & plotting
-│
-├── 📂 notebooks/
-│   ├── 01_EDA.ipynb                  # Data exploration & class distribution
-│   ├── 02_DCGAN_Training.ipynb       # GAN augmentation pipeline
-│   ├── 03_Model_Training.ipynb       # CNN training & benchmarking
-│   └── 04_GradCAM_Analysis.ipynb     # Interpretability analysis
-│
-├── 📂 results/
-│   ├── confusion_matrices/           # Per-model confusion matrices
-│   ├── training_curves/              # Loss & accuracy plots
-│   └── gradcam_outputs/              # Saved heatmap visualizations
-│
-├── train.py                          # Main training entry point
-├── evaluate.py                       # Test set evaluation script
-├── inference.py                      # Single-image prediction + Grad-CAM
-├── requirements.txt
-└── README.md
-```
-
----
 
 ## 🧩 Challenges & Solutions
 
